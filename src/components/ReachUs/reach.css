@@ -1,0 +1,165 @@
+.contact {
+    padding: 40px;
+    background-color: whitesmoke;
+}
+
+.contact-section {
+    display: flex;
+    font-family: 'Georgia', serif;
+    color: #fff;
+    background-color: #1e1e1e;
+    height: auto;
+}
+
+.contact-left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contact-left {
+    width: 50%;
+}
+
+.contact-right {
+    width: 50%;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-right h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.contact-right p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-row {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.form-row input,
+select,
+textarea {
+    flex: 1;
+    padding: 0.75rem;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    font-size: 1rem;
+    outline: none;
+}
+
+option {
+    color: black;
+}
+
+textarea {
+    resize: none;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.button {
+    background-color: #d4af37;
+    color: #000;
+    padding: 0.75rem 2rem;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    align-self: flex-start;
+}
+
+.contact-details {
+    margin-top: 2rem;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.contact-details .detail {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 1rem;
+}
+
+.contact-details i {
+    font-size: 1.25rem;
+    color: #d4af37;
+}
+
+@media (max-width: 768px) {
+    .contact {
+        padding: 20px;
+        width: 90%;
+    }
+
+    .contact-section {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .contact-left {
+        display: none;
+        /* Hide image */
+    }
+
+    .contact-right {
+        width: 90%;
+        padding: 1.5rem;
+        text-align: left;
+    }
+
+    .contact-right h2 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .contact-right p {
+        width: 100%;
+        text-align: center;
+    }
+    .form-row {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .form-row input,
+    select,
+    textarea {
+        width: 85%;
+        font-size: 1rem;
+    }
+
+    .button {
+        align-self: center;
+        padding: 0.75rem 1.5rem;
+        font-size: 1rem;
+    }
+
+    .contact-details {
+        flex-direction: column;
+        gap: 1.5rem;
+        align-items: flex-start;
+    }
+
+    .contact-details .detail {
+        justify-content: center;
+        width: 100%;
+    }
+}
